@@ -14,7 +14,8 @@
     "require-dev": {
         "symfony/form": "4.4.*",
         "symfony/maker-bundle": "^1.14",
-        "symfony/orm-pack": "^1.0"
+        "symfony/orm-pack": "^1.0",
+        "symfony/templating": "4.4.*"
     },
     "config": {
         "preferred-install": {
