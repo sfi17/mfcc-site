@@ -31,3 +31,11 @@ html {
 .nav-link{
     color: #81c784;
 }
+#activity{
+    color: black;
+}
+
+#activity:hover{
+    text-decoration: underline;
+    color: #66bb6a;
+}
