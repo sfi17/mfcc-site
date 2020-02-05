@@ -8,8 +8,8 @@
 
   html,
   body,
-  header,
-  .view {
+  header
+  {
     height: 100%;
   }
 
@@ -19,7 +19,7 @@
 <header style="height: 65%;">
 
   <!-- Full Page Intro -->
-  <div class="view  green lighten-2" >
+  <div class="view  green lighten-2" style="height: 100%;">
     <!-- Mask & flexbox options-->
     <div class="mask">
       <!-- Content -->
@@ -30,8 +30,8 @@
           <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.2s">
             <h1 class="white-text mb-4">Madagascar Forest Company Corporation Association</h1>
             <p class="mb-4 pb-2 white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae, culpa qui officia deserunt labor debitis.</p>
-          	<a href="#two" type="button" class="btn btn-outline-white btn-md ml-md-0">Our Projects</a>
-          	<a href="#three" type="button" class="btn btn-white btn-md">Contact Us</a>
+          	<a href="#projects" type="button" class="btn btn-outline-white btn-md ml-md-0">Our Projects</a>
+          	<a href="#contact" type="button" class="btn btn-white btn-md">Contact Us</a>
           </div>
           <!--Grid column-->
        
@@ -47,7 +47,7 @@
     </div>
     <!-- Mask & flexbox options-->
     <div id="down">
-      <a href="#two" <i id="icon-down" class="fas fa-arrow-circle-down"></i></a>
+      <a href="#activities" <i id="icon-down" class="fas fa-arrow-circle-down"></i></a>
   </div>
   </div>
   
@@ -55,6 +55,7 @@
   
   
 </header>
+{% include 'home/news.html.twig' %}
 {% include 'home/projects.html.twig' %}
 {% include 'home/contact.html.twig' %}
 {% endblock %}
