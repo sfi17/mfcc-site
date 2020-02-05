@@ -8,3 +8,26 @@ body{
 html {
     scroll-behavior: smooth;
   }
+
+#down{
+    margin-left: 48%; 
+    margin-top: 17px; 
+    z-index: 5; 
+    bottom: 2px; 
+    position: absolute; 
+    cursor: pointer;
+}
+
+#icon-down{
+    font-size: 25px; 
+    color: #c8e6c9;
+}
+
+#icon-down:hover{
+    font-size: 25px; 
+    color: #388e3c;
+    transition: 0.5s;
+}
+.nav-link{
+    color: #81c784;
+}
