@@ -5,3 +5,6 @@ body{
 .navbar{
     z-index: 5;
 }
+html {
+    scroll-behavior: smooth;
+  }
