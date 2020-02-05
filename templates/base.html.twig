@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="{{ asset('mdbootstrap/css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ asset('mdbootstrap/css/mdb.min.css') }}">
         <link rel="stylesheet" href="{{ asset('mdbootstrap/css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('style.css') }}">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -13,11 +14,11 @@
         {% endblock %}
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light white" style="z-index: 5;">
+        <nav class="navbar navbar-fixed navbar-expand-lg navbar-light white" style="z-index: 5; position: fixed; width: 100%;">
 
             <div class="container"> 
 
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="{{ path('home') }}">
                 <img src="{{ asset('logo/logo-mfcc-nav.png') }}" height="50" alt="mdb logo">
                 </a>
 
@@ -33,16 +34,13 @@
                 <!-- Left -->
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                    <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">JQUERY</a>
+                    <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/jquery/">Blog</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/angular/" target="_blank">Angular</a>
+                    <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/angular/">Our Team</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/react/" target="_blank">React</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/vue/" target="_blank">Vue</a>
+                    <a class="nav-link waves-effect" href="https://mdbootstrap.com/docs/react/">Projects</a>
                     </li>
                 </ul>
 
@@ -58,16 +56,11 @@
                         <i class="fab fa-twitter"></i>
                     </a>
                     </li>
+                    
                     <li class="nav-item">
-                    <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link waves-effect"
-                        target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    </li>
-                    <li class="nav-item">
-                    <a href="https://mdbootstrap.com/docs/jquery/newsletter/"
-                        class="nav-link border border-light rounded waves-effect mr-2" target="_blank">
-                        <i class="fas fa-envelope mr-1"></i>Newsletter
+                    <a href="{{ path('app_login') }}"
+                        class="nav-link border border-light rounded waves-effect mr-2">
+                        <i class="fab fa-github mr-1"></i>Get Involved
                     </a>
                     </li>
                 </ul>
@@ -77,7 +70,91 @@
             </div>
 
             </nav>
+
         {% block body %}{% endblock %}
+        <!-- Footer -->
+        <footer class="page-footer font-small green lighten-2 pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+
+                <!-- Content -->
+                <h5 class="text-uppercase">Footer Content</h5>
+                <p>Here you can use rows and columns to organize your footer content.</p>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links</h5>
+        
+                <ul class="list-unstyled">
+                <li>
+                    <a href="#!">Link 1</a>
+                </li>
+                <li>
+                    <a href="#!">Link 2</a>
+                </li>
+                <li>
+                    <a href="#!">Link 3</a>
+                </li>
+                <li>
+                    <a href="#!">Link 4</a>
+                </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled">
+                <li>
+                    <a href="#!">Link 1</a>
+                </li>
+                <li>
+                    <a href="#!">Link 2</a>
+                </li>
+                <li>
+                    <a href="#!">Link 3</a>
+                </li>
+                <li>
+                    <a href="#!">Link 4</a>
+                </li>
+                </ul>
+
+            </div>
+            <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/">Rabemorasata Heriniaina Safidy</a>
+        </div>
+        <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
         <script type="text/javascript" src="{{ asset('mdbootstrap/js/jquery.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('mdbootstrap/js/popper.min.js') }}"></script>
         <script type="text/javascript" src="{{ asset('mdbootstrap/js/bootstrap.min.js') }}"></script>
